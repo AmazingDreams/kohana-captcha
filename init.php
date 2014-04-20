@@ -4,5 +4,6 @@
 Route::set('captcha', 'captcha(/<group>)')
 	->defaults(array(
 		'controller' => 'captcha',
-		'action' => 'index',
-		'group' => NULL));
+		'action'     => 'index',
+		'group'      => NULL,
+	));

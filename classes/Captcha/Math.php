@@ -58,6 +58,7 @@ class Captcha_Math extends Captcha
 	 */
 	public function render($html = TRUE)
 	{
+		$this->update_response_session();
 		return $this->math_exercise;
 	}
 

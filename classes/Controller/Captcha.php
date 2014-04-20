@@ -32,7 +32,7 @@ class Controller_Captcha extends Controller {
 		$group = $this->request->param('group', 'default');
 		Captcha::instance($group)->render(FALSE);
 	}
-	
+
 	public function after()
 	{
 		Captcha::instance()->update_response_session();
